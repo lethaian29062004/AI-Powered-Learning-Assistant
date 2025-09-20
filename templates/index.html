@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}AI-Powered Learning Assistant{% endblock %}
+{% block content %}
+
+<div class="row">
+ 
+  <div class="col-md-7">
+
+    
+
+    
+    <div class="d-flex mb-3">
+      <textarea id="inputText" class="form-control square-box me-2" 
+        placeholder="Type here..."></textarea>
+      <div class="d-flex flex-column gap-2">
+        <button class="btn btn-primary" onclick="callAction('summarize')">📚 Summarize</button>
+        <button class="btn btn-info" onclick="callAction('explain')">💡 Explain</button>
+        <button class="btn btn-success" onclick="callAction('questions')">❓ Questions</button>
+      </div>
+    </div>
+
+    
+    <div class="card square-box">
+      <div class="card-body">
+        <h5>Output</h5>
+        <pre id="output"></pre>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-body">
+        <h5>History [current session] </h5>
+        <table class="table table-sm table-striped" id="historyTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Action</th>
+              <th>Topic</th> 
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
