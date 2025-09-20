@@ -11,3 +11,6 @@ A Flask web app using Google Gemini API.
 ```bash
 pip install -r requirements.txt
 python app.py
+
+## How The Application Works
+
