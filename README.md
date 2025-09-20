@@ -1,4 +1,4 @@
- **[AI-Powered-Learning-Assistant](https://ai-powered-learning-assistant.onrender.com/)** ( Click here to test the application )
+ **[AI-Powered-Learning-Assistant](https://ai-powered-learning-assistant.onrender.com/)**
 
 A Flask web app using Google Gemini API.
 
